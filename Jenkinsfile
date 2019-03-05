@@ -2,7 +2,7 @@ node('maven'){
     def mvnhome = tool name: 'maven360', type: 'maven'
     stage('first stage checkout'){
         git credentialsId: 'gitToken', url: 'https://github.com/deepaklama0815/Khatra_Jenkins.git'
-        echo "first stagee1"
+        echo "first stagede1"
     }
     stage('maven build'){
         echo "hi"
