@@ -4,7 +4,7 @@ node('maven'){
         echo "first staggdgdge1"
     }
     stage('maven build'){
-        sh "$mvnhome/bin/mvn clean test"
+        sh "$mvnhome/bin/mvn clean test surefire-report:report-only"
     }
    
     stage('running junit for test report'){
