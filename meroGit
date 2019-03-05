@@ -9,7 +9,8 @@ node('maven'){
    
     stage('running junit for test report'){
         junit allowEmptyResult: true, testResults: 'target/surefire-reports/*.xml'
-        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site', reportFiles: 'surefire-report.html', reportName: 'SureFireReportHTML', reportTitles: ''])
+        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTMLReport', reportTitles: ''])
+        // loki-- publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site', reportFiles: 'surefire-report.html', reportName: 'SureFireReportHTML', reportTitles: ''])
        // publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/home/ec2-user/jenkins_workspace/ex1/workspace/new_Project/target/surefire-reports', reportFiles: 'index.html', reportName: 'HTMLReport', reportTitles: ''])
     }
      stage('packaging software'){
