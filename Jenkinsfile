@@ -21,4 +21,4 @@ node('maven'){
    // stage('Archiving the completed jar file'){
      //   archiveArtifacts '**/target/*.jar'
     //}
-}
+ }
