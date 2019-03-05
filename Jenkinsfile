@@ -2,7 +2,7 @@ node('maven'){
     def mvnhome = tool name: 'maven360', type: 'maven'
     stage('first stage checkout'){
         git credentialsId: 'gitToken', url: 'https://github.com/deepaklama0815/Khatra_Jenkins.git'
-        echo "first stage1"
+        echo "first stagee1"
     }
     stage('maven build'){
         sh "$mvnhome/bin/mvn clean test surefire-report:report-only"
