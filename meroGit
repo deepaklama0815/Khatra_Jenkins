@@ -3,9 +3,9 @@ node('maven'){
     stage('my first stage checkout'){
         echo "first staggdgdge1"
     }
-    //stage('maven build'){
-      //  sh "$mvnhome/bin/mvn clean test"
-    //}
+    stage('maven build'){
+        sh "$mvnhome/bin/mvn clean test"
+    }
    
   //  stage('running junit for test report'){
     //    junit allowEmptyResult: true, testResults: 'target/surefire-reports/*.xml'
