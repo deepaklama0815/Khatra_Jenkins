@@ -1,7 +1,7 @@
 node('maven'){
     def mvnhome = tool name: 'maven360', type: 'maven'
     stage('first stage checkout'){
-        echo "first stageddde1"
+        echo "first stagedfdde1"
     }
     stage('maven build'){
         echo "hi"
