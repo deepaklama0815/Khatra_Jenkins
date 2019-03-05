@@ -25,5 +25,5 @@ node('maven'){
 /my-app-1-RELEASE.jar deployusr@172.31.86.167:/opt/tomcat/"
     }
 }  
-}
+
  
