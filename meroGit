@@ -24,6 +24,7 @@ node('maven'){
     	sh "scp -o StrictHostKeyChecking=no /home/ec2-user/jenkins_workspace/ex1/workspace/Naya_Folder/gitPipeline/target
 /my-app-1-RELEASE.jar deployusr@172.31.86.167:/opt/tomcat/"
     }
+  }
 }  
 
  
